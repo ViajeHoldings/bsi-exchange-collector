@@ -5,11 +5,12 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon --watch .env app.js"
+    "dev": "nodemon app.js -e js --watch . --watch .env"
   },
   "author": "Yosep Ryan Agusta <yosep.ryan.yra@gmail.com> (https://yosepra.github.io/)",
   "license": "MIT",
   "dependencies": {
+    "coingecko-api": "^1.0.10",
     "dotenv": "^16.0.3",
     "mongoose": "^5.13.15"
   },
