@@ -9,7 +9,7 @@ const { promiseResolver } = require('./utilities/helpers.js');
 const CoinGeckoClient = new CoinGecko();
 const mongoUrl =
   process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/BSI-exchange-collector';
-const delay = parseInt(process.argv[2], 10) || 30000;
+const delay = parseInt(process.env.REQUEST_INTERVAL, 10) || 30000;
 
 async function getLatestPrice() {
   const params = {
