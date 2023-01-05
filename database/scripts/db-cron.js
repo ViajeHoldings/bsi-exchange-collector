@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const cron = require('node-cron');
 
 const mongoConnect = require('./mongo-connect.js');
