@@ -10,6 +10,7 @@
   "author": "Yosep Ryan Agusta <yosep.ryan.yra@gmail.com> (https://yosepra.github.io/)",
   "license": "MIT",
   "dependencies": {
+    "axios": "^1.3.4",
     "coingecko-api": "^1.0.10",
     "dotenv": "^16.0.3",
     "mongoose": "^5.13.15",
